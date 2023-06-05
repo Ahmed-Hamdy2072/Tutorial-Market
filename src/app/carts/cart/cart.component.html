@@ -1,0 +1,58 @@
+<section class="h-100" style="background-color: #eee;">
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+      </div>
+      <div class="col-10 ">
+        <div class="card col-10  card-body" id="notExist" [hidden]="!Exist">
+          <h6>Cart is Empty</h6>
+        </div>
+
+
+        <div class="card rounded-3 mb-4" *ngFor="let prd of cart ; let index= index " [hidden]="Exist">
+          <div class="card-body p-4">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-2 col-lg-2 col-xl-2">
+                <img src="{{prd.item.image}}" class="img-fluid rounded-3" alt="Cotton T-shirt">
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3">
+                <p class="lead fw-normal mb-2">{{prd.item.title}}</p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                <button class="btn btn-link px-2" (click)="deductAmount(index)"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                  <i class="fas fa-minus"></i>
+                </button>
+
+                <input id="form1" min="0" name="quantity" type="number" [(ngModel)]="prd.quantity"
+                  (change)="detectChange()" class="form-control form-control-sm">
+
+                <button class="btn btn-link px-2" (click)="addAmount(index)"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                <h5 class="mb-0">{{prd.item.price}}</h5>
+                <div>
+                  Total : {{prd.item.price*prd.quantity}} L.E
+                </div>
+              </div>
+              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                <a (click)="delPrd(index)" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 col-9 ">
+      <div class="card-body ">
+        <h2>Total :{{total}} L.E</h2>
+        <button type="button" id="Payment" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="my-4 w-25">
+    <app-select [data]="Catergories" [title]="'Catergories'" (SelectedData)="FilterCat($event)"></app-select>
+  </div>
+  <hr>
+  <div class="row text-center  " *ngIf="!loading">
+    <div id="card" class="col-md-3 col-lg-3" *ngFor="let prd of products">
+
+      <app-product class="d-flex flex-row" [data]="prd" (item)="addToCart($event)"></app-product>
+
+    </div>
+  </div>
+  <div class="text-center" *ngIf="loading">
+    <div class="spinner-border text-dark text-center" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,117 @@
+{
+  "Users": [
+    {
+      "userName": "aaaa",
+      "Email": "aaaa@aaa.com",
+      "Password": "aaaa",
+      "confirmPassword": "aaaaa",
+      "id": 1
+    },
+    {
+      "email": "aaa@aaa.com",
+      "Password": "aaa",
+      "id": 2
+    },
+    {
+      "email": "aaa@aaa.com",
+      "Password": "aaaaa",
+      "id": 3
+    },
+    {
+      "email": "",
+      "Password": "",
+      "id": 4
+    }
+  ],
+  "Admin": [
+    {
+      "userName": "bbbb",
+      "Email": "bbbb@bbb.com",
+      "Password": "bbbb",
+      "confirmPassword": "bbbb",
+      "id": 1
+    },
+    {
+      "title": "scaramoche",
+      "category": "jewelery",
+      "id": "2000"
+    },
+    {
+      "title": "",
+      "category": "",
+      "id": "XpGxZqw"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "dCbqv-B"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "aAj-eLl"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "qQRDDiJ"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "MYTTywz"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "47d1YG2"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "cVRcOpo"
+    },
+    {
+      "title": "scaramoche",
+      "category": "electronics",
+      "description": "0000",
+      "price": "0000",
+      "image": {},
+      "id": "0000"
+    },
+    {
+      "title": "11",
+      "category": "electronics",
+      "description": "111",
+      "price": "111",
+      "image": {},
+      "id": "111"
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "BGNBUAQ"
+    },
+    {
+      "title": "scaramoche",
+      "category": "",
+      "description": "",
+      "price": "",
+      "id": "nxCojBy"
+    }
+  ]
+}

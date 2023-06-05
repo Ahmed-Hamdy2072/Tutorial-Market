@@ -1,0 +1,13 @@
+#notExist{
+  height: 200px;
+  text-align: center;
+}
+h2{
+ position: relative;
+  bottom: 50px;
+  left: 100%;
+}
+#Payment{
+position: relative;
+bottom: 100px;
+}

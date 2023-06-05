@@ -1,0 +1,39 @@
+<div class="container mt-5 mb-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="images p-3">
+              <div class="text-center p-4"> <img id="main-image" src="{{prd.image}}" width="250" /> </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-dark" (click)="goback()">Back</button>
+              </div>
+              <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">{{prd.category}}</span>
+                <h5 class="text-uppercase">{{prd.title}}</h5>
+                <div class="price d-flex flex-row align-items-center">
+                  <div class="ml-2">
+                    <h4 class="dis-price">Price:{{prd.price}}L.E</h4>
+                  </div>
+                </div>
+              </div>
+              <p class="about">{{prd.description}}</p>
+              <div class="container">
+                <label for="Quantity"> Quantity</label>
+                <input type="number" class="form-control  mt-2 active " id="Quantity" value="1" [(ngModel)]="Quantity">
+              </div>
+
+              <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4"
+                  (click)="addToCart()">Add to
+                  cart</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="card-content">
+  <a class="spectrum-a" routerLink="/details/{{ data.id }}"><img class="spectrum1" id="cardImg"
+      src="{{ data.image }}" />
+    <h4 class="spectrum-h2">Price : {{ data.price }} L.E</h4>
+    <div class="text-truncate">{{ data.title }}</div>
+
+    <div class="text-truncate">{{data.category}}</div>
+  </a>
+
+  <div class="Cart">
+    <button class="btn btn-dark text-uppercase mr-2 px-4" (click)="addToCart()">
+      Add to Cart
+    </button>
+    <input type="number" class="form-control mt-2 active" id="Quantity" value="1" [(ngModel)]="Quantity" />
+  </div>
+</div>

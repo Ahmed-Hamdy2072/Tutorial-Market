@@ -1,0 +1,41 @@
+<!-- Button trigger modal -->
+
+<div class="card">
+  <h5 class="card-header">Add Product</h5>
+  <div class="card-body">
+    <button type="button" class="btn btn-dark mt-4 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Click Here To Add Product
+    </button>
+  </div>
+</div>
+<!-- <div class="card">
+  <h5 class="card-header">Edit & Delete Products</h5>
+  <div class="card-body">
+    <button type="button" class="btn btn-dark mt-4 " routerLink="Edit&Delete">
+      Click Here To Edit & Delete Products
+    </button>
+  </div>
+</div> -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Product
+          <hr>
+          <p>Fill in the data below.</p>
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <app-add-product></app-add-product>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-edit-products></app-edit-products>

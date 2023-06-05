@@ -1,0 +1,6 @@
+<label class="mb-2" for="title">{{title}} :</label>
+<select name="title" id="title" class="form-control" (change)="FilterCat($event)">
+  <option value="0" selected>Select Catergory</option>
+  <option *ngFor="let cat of data">{{cat}}</option>
+
+</select>

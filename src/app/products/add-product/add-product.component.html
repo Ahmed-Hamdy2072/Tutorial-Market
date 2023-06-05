@@ -1,0 +1,48 @@
+<div class="form-body">
+  <div class="row">
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <form class="requires-validation" novalidate [formGroup]="addForm">
+            <div class="col-md-12">
+              <input class="form-control" type="text" name="name" placeholder="Product Title" formControlName="Title" />
+            </div>
+
+            <div class="col-md-12 mt-3">
+              <input class="form-control" type="text" placeholder="Price" formControlName="Price" />
+            </div>
+
+            <div class="col-md-12">
+              <select class="form-select mt-3" formControlName="Category">
+                <option selected disabled>Category</option>
+                <option value="{{ cat }}" *ngFor="let cat of Catergories">
+                  {{ cat }}
+                </option>
+              </select>
+            </div>
+
+            <div class="col-md-12 mt-3">
+              <textarea name="Description" cols="30" rows="10" formControlName="Description">
+Description</textarea>
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" name="id" id="id" placeholder="ID" formControlName="ID" />
+            </div>
+
+            <img class="w-25" src="{{base64}}" alt="">
+            <div class="col-md-12">
+              <input type="file" name="image" (change)="getimage($event)" />
+            </div>
+
+            <div class="form-button mt-3">
+              <button id="submit" type="submit" class="btn btn-primary" [disabled]="!addForm.valid" (click)="Submit()">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
